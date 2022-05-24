@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🎬 Movie Name:** {search}\n**◻️ Movie Size:** {random.choice(RATING)}\n**🔰 Print:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**\n\nIf U didn't get any Movie , Tag @admin with your Movie Name\n\nஉங்களுக்கு எந்த திரைப்படமும் கிடைக்கவில்லை என்றால், உங்கள் படத்தின் பெயரைக் கொண்டு @admin ஐக் குறியிடவும்**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🎬 Movie Name:** {search}\n**◻️ Movie Size:** {random.choice(RATING)}\n**🔰 Print:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**\n\nIf U didn't get any Movie , Tag @admin with your Movie Name\n\nஉங்களுக்கு எந்த திரைப்படமும் கிடைக்கவில்லை என்றால், உங்கள் படத்தின் பெயரைக் கொண்டு @admin ஐக் குறியிடவும்**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
