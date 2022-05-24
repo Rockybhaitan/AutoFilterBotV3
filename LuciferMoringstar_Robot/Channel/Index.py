@@ -79,7 +79,7 @@ async def index_files(bot, message):
             else:
                 await msg.edit(f'Total {total_files} Saved To DataBase!')
 
-RATING = ["700MB-800MB",700MB-800MB"]
+RATING = ["700MB-800MB"]
 GENRES = ["HD",
          "HD",
          "HD",
