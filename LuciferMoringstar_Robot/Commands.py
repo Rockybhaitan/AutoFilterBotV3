@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 DEPLOY YOURS 🎖', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🛡️ JOIN MAIN CHANNEL 🛡️', url=f'https://t.me/Tamil_Movies_Finder')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -115,10 +115,9 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
+                InlineKeyboardButton('🎬 700MB MOVIES GROUP 🎬', url=f'https://t.me/+ZfZ3zh8R4g0zNzc9')
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton('✅ JOIN MAIN CHANNEL ✅', url=f'https://t.me/Tamil_Movies_Finder'),
                 ]]
             )
         )
